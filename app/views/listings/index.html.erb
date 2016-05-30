@@ -1,0 +1,32 @@
+<!-- <p id="notice"><%= notice %></p> -->
+<div class="page-header">
+<strong>
+<h1>
+  All Listings
+  <%= link_to 'Add a Listing', new_listing_path, class: "btn btn-primary" %>
+</h1>
+</strong>
+</div>
+
+
+
+    <% @listings.each do |listing| %>
+      <div class="listing">
+        <strong><%= listing.name %></strong>
+
+          <p><%= listing.details %></p>
+        <div class="meta">
+          <%= link_to time_ago_in_words(listing.created_at) + " ago", listing %>
+
+        <span class="admin"> |
+          <%= link_to 'Edit', edit_listing_path(listing) %> |
+          <%= link_to 'Delete', listing, method: :delete, data: { confirm: 'Are you deleting on purpose?' } %>
+        </span>
+
+        </div>
+      </div>
+    <% end %>
+  </tbody>
+
+
+<br>
