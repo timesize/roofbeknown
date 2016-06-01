@@ -1,3 +1,4 @@
 class Listing < ActiveRecord::Base
-  # attr_acessible :details
+  # attr_accessible :details, :user_id
+  belongs_to :user
 end
