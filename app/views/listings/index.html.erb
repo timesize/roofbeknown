@@ -1,4 +1,4 @@
-<!-- <p id="notice"><%= notice %></p> -->
+<p id="notice"><%= notice %></p>
 <div class="page-header">
 <strong>
 <h1>
@@ -12,7 +12,10 @@
 
     <% @listings.each do |listing| %>
       <div class="listing">
-        
+        <strong>Host</strong>
+        <% if listing.user %>
+        <%= listing.user.email %>
+        <% end %>
 
           <p><%= listing.details %></p>
         <div class="meta">
