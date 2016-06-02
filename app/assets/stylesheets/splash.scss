@@ -1,3 +1,11 @@
 // Place all the styles related to the splash controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+ html {
+
+   background-image: url("https://images.unsplash.com/20/cold-city.JPG?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=f415f3b2ff109634678e3dd0ac6fac02");
+   background-size: cover;
+   min-height: 100%;
+   position: relative;
+   background-repeat: no-repeat;
+ }
