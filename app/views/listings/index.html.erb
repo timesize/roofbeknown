@@ -12,7 +12,7 @@
 
     <% @listings.each do |listing| %>
       <div class="listing">
-      
+
         <% if listing.user %>
         <strong><%= listing.user.email %></strong>
         <% end %>
@@ -23,7 +23,7 @@
 
         <span class="admin"> |
           <%= link_to 'Edit', edit_listing_path(listing) %> |
-          <%= link_to 'Delete', listing, method: :delete, data: { confirm: 'Are you deleting on purpose?' } %>
+          <%= link_to 'Delete', listing, method: :delete, data: { confirm: 'You really wanna delete that?' } %>
         </span>
 
         </div>
