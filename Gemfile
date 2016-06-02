@@ -1,5 +1,6 @@
 source 'https://rubygems.org'
 
+gem 'commontator'
 gem 'protected_attributes'
 gem 'devise'
 gem 'simple_form'
