@@ -8,7 +8,9 @@
 </head>
 <body>
   <nav class="navbar navbar-inverse navbar-fixed-top">
-  <a href="listings_path" class="brand"><h4> RBKn</h4></a>
+    <div class="brand">
+  <li> <h4><%= link_to "RBKn", root_path %></h4> </li>
+  </div>
     <div class="container">
       <ul class="nav nav-tabs nav-pills">
         <li> <%= link_to "All Listings", listings_path %> </li>
@@ -26,9 +28,9 @@
     </div>
 </nav>
   <div class="container">
-
-    <h2>Roof Be Known</h2>
-
+    <div class="brand">
+      <h2>Roof Be Known</h2>
+    </div>
       <%= yield %>
 
 </body>
