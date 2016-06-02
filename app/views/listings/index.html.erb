@@ -12,9 +12,9 @@
 
     <% @listings.each do |listing| %>
       <div class="listing">
-        <strong>Host</strong>
+      
         <% if listing.user %>
-        <%= listing.user.email %>
+        <strong><%= listing.user.email %></strong>
         <% end %>
 
           <p><%= listing.details %></p>
