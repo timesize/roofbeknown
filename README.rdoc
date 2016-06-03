@@ -6,7 +6,17 @@ and hopes of obtaining employment.
 That's why I present Roof Be Known.
 A hub for space sharing to drastically reduce costs,
 by avoiding the effects of premiums meant for getaways.
+Here you'll have an easy way to connect with others share the burden,
+and move on to improving the rest of your life.
 
 
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+Technologies:
+
+Ruby on Rails
+PosgreSQL
+Javascript
+html/ CSS
+Devise
+Commontator
+Protected_attributes
+Simple_form
