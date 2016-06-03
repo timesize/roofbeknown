@@ -2,6 +2,8 @@ class ListingsController < ApplicationController
   before_filter :authenticate_user!, only: [:new, :create, :edit, :update]
   before_action :set_listing, only: [:show, :edit, :update, :destroy]
 
+  # acts_as_commontable
+
   # GET /listings
   # GET /listings.json
   def index

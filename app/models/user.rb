@@ -1,4 +1,5 @@
 class User < ActiveRecord::Base
+  # acts_as_commontator
   # Include default devise modules. Others available are:
   # token_authenticatable, :confirmable,
   # :lockable, :timeoutable and :omniauthable
@@ -11,7 +12,7 @@ class User < ActiveRecord::Base
  # attr_accessible :title, :body
 
  has_many :listings
- 
+
 
  def full_name
    first_name + " " + last_name
